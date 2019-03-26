@@ -1,0 +1,5 @@
+package com.revature.transport;
+
+public abstract class Vehicle {
+
+}
