@@ -1,9 +1,16 @@
 package com.revature.transport;
 
-public class Car extends Vehicle implements Steerable{
+import java.io.Serializable;
+
+public class Car extends Vehicle implements Steerable, Serializable{
 
 	
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public Car() {
 		super();
 	
