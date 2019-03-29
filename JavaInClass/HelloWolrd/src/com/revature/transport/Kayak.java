@@ -1,6 +1,6 @@
 package com.revature.transport;
 
-public class Kayak extends Vehicle implements Steerable{
+public class Kayak extends Vehicle implements Steerable, Comparable<Kayak>{
 
 	public Kayak() {
 		super();
@@ -79,6 +79,14 @@ public class Kayak extends Vehicle implements Steerable{
 	@Override
 	public String toString() {
 		return "Kayak [length=" + length + ", color=" + color + "]";
+	}
+
+	@Override
+	public int compareTo(Kayak arg0) {
+		
+		//convert to wrapper class Double, manual boxing
+		return (new Double(this.length)).compareTo(arg0.getLength());
+	
 	}
 
 }
